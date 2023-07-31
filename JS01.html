@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+    <h4 id="tag"></h4>
+    <p id="demo"></p>
+    <script>
+        var num = parseInt(prompt("Enter a number"));
+        var text = "";
+        let msg = "Numbers from 1 to " + num + ",";
+        for(i = 1; i <= num; i++) {
+            text += i + "<br>";
+            console.log(i);
+        }
+        document.getElementById("tag").innerHTML = msg;
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>
