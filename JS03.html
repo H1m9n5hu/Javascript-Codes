@@ -1,0 +1,24 @@
+<!-- Print the multiplication table with 7? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+    <h4 id="msg"></h4>
+    <p id="text"></p>
+<script>
+    var text = "";
+    let msg = "Multiplication Table of 7,";
+    for(let i = 1; i <= 10; i++) {
+        text += i*7 + "<br>";
+        console.log(i*7);
+    }
+    document.getElementById("msg").innerHTML = msg;
+    document.getElementById("text").innerHTML = text;
+</script>
+</body>
+</html>
