@@ -1,0 +1,23 @@
+<!-- Create a function that will convert from Celsius to Fahrenheit? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+    <h4 id="text"></h4>
+<script>
+    function celsiusToFahrenheit(t) {
+        return (t * 1.8) + 32;
+    }
+
+    let tempC = parseFloat(prompt("Enter the temperature"));
+    let tempF = celsiusToFahrenheit(tempC);
+    var text = tempC + "°C is equivalent to " + tempF + "°F.";
+    document.getElementById("text").innerHTML = text;
+</script>
+</body>
+</html>
