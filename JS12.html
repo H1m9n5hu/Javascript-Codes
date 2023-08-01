@@ -1,0 +1,37 @@
+<!-- Create a function that receives an array of numbers as argument and returns an
+array containing only the positive numbers? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+<script>
+    function positiveElementsArray(arr){
+        var positiveArr = [];
+        for(var i = 0; i < arr.length; i++){
+            if(arr[i] > 0){
+                positiveArr.push(arr[i]);
+            }
+        }
+        return positiveArr;
+    }
+
+    var size = parseInt(prompt("Enter the size of array and then enter the element of the array"));
+    const arr = [];
+    for(let i = 0; i < size; i++)
+        arr.push(parseInt(prompt()));
+    document.write("Original array elements are : ", "<br/>");
+    for(let x in arr)
+       document.write(arr[x] + " ");
+    document.write("<hr>");
+    var modifyArray = positiveElementsArray(arr);
+    document.write("Positive elements of an array : ", "<br/>");
+    for(let i = 0; i < modifyArray.length; i++)
+        document.write(modifyArray[i] + " ");
+</script>
+</body>
+</html>
