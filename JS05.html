@@ -1,0 +1,21 @@
+<!-- Calculate the sum of numbers from 1 to 10? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+    <h4 id="text"></h4>
+<script>
+    var text = "Sum of numbers from 1 to 10 is ";
+    var sum = 0;
+    for(let i = 1; i <= 10; i++)
+        sum += i;
+    text += sum + ".";
+    document.getElementById("text").innerHTML = text;
+</script>
+</body>
+</html>
