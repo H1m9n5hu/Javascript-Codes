@@ -1,0 +1,22 @@
+<!-- Calculate the sum of numbers in an array of numbers? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+    <h4 id="text"></h4>
+<script>
+    const integerArr = [1, 2, 3, 4, 5];
+    var sum = 0;
+    var text = "Sum of numbers in an array is ";
+    for(let i = 0; i < integerArr.length; i++)
+        sum = sum + integerArr[i];
+    text += sum + ".";
+    document.getElementById("text").innerHTML = text;
+</script>
+</body>
+</html>
