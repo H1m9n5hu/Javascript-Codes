@@ -1,0 +1,24 @@
+<!-- Create a function that will find the nth Fibonacci number using recursion? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+<script>
+    function fibonacciRecursive(x) {
+        if (x <= 1)
+            return x;
+        return fibonacciRecursive(x - 1) + fibonacciRecursive(x - 2);
+    }
+
+    var num = parseInt(prompt("Enter a number"));
+    document.write("Fibonacci sequence till " + num + " numbers : ");
+    for(let i = 0; i < num; i++)
+        document.write(fibonacciRecursive(i) + " ");
+</script>
+</body>
+</html>
