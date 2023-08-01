@@ -1,0 +1,24 @@
+<!-- Calculate the average of the numbers in an array of numbers? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+    <h4 id="text"></h4>
+<script>
+    var size = parseInt(prompt("Enter the size of array and then enter the element of the array"));
+    const arr = [];
+    for(let i = 0; i < size; i++)
+        arr.push(parseInt(prompt()));
+    var sum = 0;
+    for(let i = 0; i < size; i++)
+        sum += arr[i];
+    var text = "Average of the numbers in an array is " + parseFloat(sum/size).toFixed(2) + ".";
+    document.getElementById("text").innerHTML = text;
+</script>
+</body>
+</html>
