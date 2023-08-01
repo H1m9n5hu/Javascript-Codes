@@ -1,0 +1,22 @@
+<!-- Calculate 10!? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+    <h4 id="text"></h4>
+<script>
+    var num = parseInt(prompt("Enter a Number"));
+    var text = "Factorial of " + num + " is ";
+    var fact = 1;
+    for(let i = 1; i <= num; i++)
+        fact *= i;
+    text += fact + ".";
+    document.getElementById("text").innerHTML = text;
+</script>
+</body>
+</html>
