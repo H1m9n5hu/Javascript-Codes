@@ -1,0 +1,21 @@
+<!-- Calculate the sum of even numbers greater than 10 and less than 30? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+    <h4 id="text"></h4>
+<script>
+    var text = "Sum of even numbers greater than 10 and less than 30 is ";
+    var sum = 0;
+    for(let i = 11; i < 30; i++)
+        if(i%2 == 0) sum += i;
+    text += sum + ".";
+    document.getElementById("text").innerHTML = text;
+</script>
+</body>
+</html>
