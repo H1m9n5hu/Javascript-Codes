@@ -1,0 +1,32 @@
+<!-- Print the first 10 Fibonacci numbers without recursion? -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript Code</h2>
+<script>
+    var num = parseInt(prompt("Enter a number"));
+    document.write("Fibonacci sequence till " + num + " numbers : ");
+    var a = 0, b = 1;
+    if(num == 0)
+        document.write("Invalid input!");
+    else if(num == 1)
+        document.write(a);
+    else {
+        var temp = 0;
+        var i = 0;
+        while(i < num){
+            document.write(a + " ");
+            temp = a + b;
+            a = b;
+            b = temp;
+            i += 1;
+        }
+    }
+</script>
+</body>
+</html>
